@@ -1,0 +1,243 @@
+/* General Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --purple-color: #6f42c1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px;
+    /* For fixed navbar */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: var(--primary-color);
+    margin: 1.5rem auto;
+}
+
+.divider.light {
+    border-color: var(--light-color);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Header Section */
+.header-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    color: white;
+    padding: 8rem 0;
+    margin-bottom: 0;
+}
+
+.header-section h1 {
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#habilidades {
+    background-color: #f8f9fa;
+}
+
+.html5-item,
+.css-item,
+.javascript-item,
+.sql-item,
+.react-item,
+.c\\#-item,
+.nodejs-item {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    height: 100%;
+}
+
+.html5-item:hover,
+.css-item:hover,
+.javascript-item:hover,
+.sql-item:hover,
+.react-item:hover,
+.c\\#-item:hover,
+.nodejs-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.html5-item svg,
+.css-item svg,
+.javascript-item svg,
+.sql-item svg,
+.c\\#-item svg,
+.nodejs-item svg {
+    fill: var(--primary-color);
+    margin-bottom: 1rem;
+    width: 60px;
+    height: 60px;
+}
+
+.html5-item h4,
+.css-item h4,
+.javascript-item h4,
+.sql-item h4,
+.react-item h4,
+.c#-item h4,
+.nodejs-item h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.progress {
+    height: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #e9ecef;
+    margin-bottom: 0.5rem;
+}
+
+.bg-purple {
+    background-color: var(--purple-color);
+}
+
+/* Footer/Contact Section */
+.footer {
+    background-color: var(--dark-color);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info p i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .header-section {
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .header-section {
+        padding: 5rem 0;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .header-section {
+        padding: 4rem 0;
+    }
+
+    .header-section h1 {
+        font-size: 2rem;
+    }
+
+    .header-section p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos | Portafolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de Proyectos -->
+    <header class="projects-header py-5 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Mis Proyectos</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de proyectos -->
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Proyecto 1</h4>
+                            <p class="card-text">Para esta actividad se realizo una serie de aplicaciones de
+                                escritorio multicapas para los formularios FrmLogin, FrmListaempleados, FrmEmpleados y
+                                FrmSeguridad. Adicional a esto muestra funcionabilidad con la base de datos brindada
+                                por el docente.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary me-2" data-bs-toggle="modal"
+                                data-bs-target="#project1Modal">Video</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Proyecto 2</h4>
+                            <p class="card-text">Para esta actividad se debio mostrar validacion de inicio usuario,
+                                funcionabilidad de consulta, ingreso y modificación. Por ultimo tener completo el
+                                formulario de facturas.
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary me-2" data-bs-toggle="modal"
+                                data-bs-target="#project2Modal">Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para los videos de proyectos -->
+    <!-- Modal Proyecto 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">E-commerce Responsive - Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Dashboard Administrativo - Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <p class="copyright">© 2025 Ana María Urrea Martínez</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
