@@ -115,10 +115,6 @@ body {
     padding: 0.5rem 0.75rem;
 }
 
-.contact-info i {
-    color: rgba(255, 109, 109, 0.7);
-}
-
 .social-icon:hover {
     color: var(--primary-color);
     transform: translateY(-3px);
@@ -129,11 +125,6 @@ body {
     .header-section,
     .projects-header {
         padding: 4rem 0;
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
     }
 
     h1.display-4 {
@@ -192,8 +183,22 @@ body {
     border-color: #d5bcfb !important;
 }
 
+.footer.bg-dark {
+    background-color: #682e9f !important;
+    color: #ffffff !important;
+}
+
 .footer .social-links svg {
     fill: #ffffff;
-    /* Color claro para los iconos */
     transition: fill 0.3s ease;
+}
+
+.footer .social-links a:hover svg {
+    fill: #d5bcfb;
+}
+
+.footer .copyright {
+    color: #bdc3c7 !important;
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
