@@ -1,0 +1,195 @@
+/* Base Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --purple-color: #6f42c1;
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px;
+    /* Para el navbar fixed-top */
+}
+
+/* Utility Classes */
+.bg-purple {
+    background-color: var(--purple-color);
+}
+
+.text-purple {
+    color: var(--purple-color);
+}
+
+.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: var(--primary-color);
+    margin: 1.5rem auto;
+}
+
+.divider.light {
+    border-color: white;
+}
+
+
+.header-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    color: white;
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Section */
+.skill-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+    color: red;
+    border: 1px solid blue;
+    margin-bottom: 1rem;
+}
+
+.skill-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Page Styles */
+.projects-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/projects-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 6rem 0;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+}
+
+.tech-stack .badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Contact Section */
+.contact-info i {
+    color: var(--primary-color);
+}
+
+.social-icon {
+    color: white;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+
+    .header-section,
+    .projects-header {
+        padding: 4rem 0;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .skill-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Modal Customization */
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
