@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: #b662ff;
     --secondary-color: #6c757d;
     --dark-color: #343a40;
     --light-color: #f8f9fa;
@@ -40,7 +40,7 @@ body {
 
 
 .header-section {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(to bottom, rgba(151, 109, 255, 0.7), rgba(0, 0, 0, 0.7));
     background-size: cover;
     color: white;
     padding: 8rem 0;
@@ -88,7 +88,7 @@ body {
 
 /* Projects Page Styles */
 .projects-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/projects-bg.jpg') no-repeat center center;
+    background: linear-gradient(to bottom, rgba(151, 109, 255, 0.7), rgba(0, 0, 0, 0.7));
     background-size: cover;
     color: white;
     padding: 6rem 0;
@@ -99,18 +99,13 @@ body {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(151, 109, 255, 0.7);
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.project-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(151, 109, 255, 0.7);
 }
 
 .tech-stack {
@@ -125,13 +120,7 @@ body {
 
 /* Contact Section */
 .contact-info i {
-    color: var(--primary-color);
-}
-
-.social-icon {
-    color: white;
-    transition: all 0.3s ease;
-    margin: 0 5px;
+    color: rgba(151, 109, 255, 0.7);
 }
 
 .social-icon:hover {
