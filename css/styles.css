@@ -1,11 +1,4 @@
 :root {
-    --primary-color: #b662ff;
-    --secondary-color: #6c757d;
-    --dark-color: #343a40;
-    --light-color: #f8f9fa;
-    --success-color: #198754;
-    --danger-color: #dc3545;
-    --purple-color: #6f42c1;
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,27 +12,27 @@ body {
 
 
 .bg-purple {
-    background-color: var(--purple-color);
+    background-color: blue;
 }
 
 .text-purple {
-    color: var(--purple-color);
+    color: blue;
 }
 
 .divider {
     max-width: 3.25rem;
     border-width: 0.2rem;
-    border-color: var(--primary-color);
+    border-color: rgb(11, 181, 217);
     margin: 1.5rem auto;
 }
 
 .divider.light {
-    border-color: white;
+    border-color: rgb(11, 181, 217);
 }
 
 
 .header-section {
-    background: linear-gradient(to bottom, rgba(151, 109, 255, 0.7), rgba(59, 43, 99, 0.7));
+    background: linear-gradient(to bottom, rgb(6, 120, 183), rgb(5, 63, 139));
     background-size: cover;
     color: white;
     padding: 8rem 0;
@@ -85,7 +78,7 @@ body {
 }
 
 .projects-header {
-    background: linear-gradient(to bottom, rgba(151, 109, 255, 0.7), rgba(59, 43, 99, 0.7));
+    background: linear-gradient(to bottom, rgba(6, 120, 183), rgba(5, 63, 139));
     background-size: cover;
     color: white;
     padding: 6rem 0;
@@ -96,13 +89,13 @@ body {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(151, 109, 255, 0.7);
+    box-shadow: 0 5px 15px rgba(6, 120, 183);
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgb(150, 109, 255);
+    box-shadow: 0 10px 20px rgb(6, 120, 183);
 }
 
 .tech-stack {
@@ -162,11 +155,12 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #d5bcfb !important;
+    color: rgb(11, 181, 217) !important;
 }
 
 .navbar.bg-dark {
-    background-color: #8f3fda !important;
+    background-color: rgb(6, 120, 183) !important;
+    opacity: 95%;
 }
 
 .navbar-brand {
@@ -180,11 +174,11 @@ body {
 }
 
 .navbar-toggler {
-    border-color: #d5bcfb !important;
+    border-color: rgb(6, 120, 183) !important;
 }
 
 .footer.bg-dark {
-    background-color: #682e9f !important;
+    background-color: rgb(5, 63, 139) !important;
     color: #ffffff !important;
 }
 
@@ -194,11 +188,29 @@ body {
 }
 
 .footer .social-links a:hover svg {
-    fill: #d5bcfb;
+    fill: rgb(173, 232, 244);
 }
 
 .footer .copyright {
     color: #bdc3c7 !important;
     font-size: 0.9rem;
     margin-top: 1rem;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.modal.fade .modal-dialog {
+    transform: scale(0.95) !important;
+    transition: transform 0.3s ease-out !important;
+}
+
+.modal-title {
+    color: #000000;
+    font-weight: bold;
 }
